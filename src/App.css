@@ -1,38 +1,171 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.405);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav ul {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: flex-end;
+  list-style: none;
+  padding: 10px 50px;
+}
+
+nav ul li a {
+  display: inline-block;
+  margin: 10px 20px;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+  font-family: 'Amiri', serif;
+}
+
+nav ul li a:hover {
+  color: rgb(122, 122, 250);
+}
+
+.AllUsers {
+  text-align: center;
+  padding: 50px 100px;
+}
+
+.AllUsers h3 {
+  color: #7a7afa;
+  font-size: 40px;
+  margin-bottom: 50px;
+  font-family: 'Amiri', serif;
+
+}
+
+.AllUsers table {
+  width: 100%;
+  box-shadow: 10px 20px 10px rgba(0, 0, 0, 0.301);
+  border-radius: 2px;
+}
+
+.AllUsers table tr {
+  box-shadow: 0 0 2px rgb(122, 122, 250);
+}
+
+.AllUsers table th {
+  color: rgb(122, 122, 250);
+  font-family: 'Amiri', serif;
+  font-size: 25px;
+}
+
+.AllUsers table td,
+.AllUsers table th {
+  padding: 20px 10px;
+}
+
+.AllUsers .editBTN {
+  display: inline-block;
+  background: #0b7ef2;
+  border: none;
   color: white;
+  padding: 10px;
+  border-radius: 5%;
+  width: 80px;
+  font-size: 18px;
+  margin: 0px 10px;
+  text-decoration: none;
+}
+.AllUsers .deleteBTN {
+  display: inline-block;
+  background: #ea1b1b;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 5%;
+  width: 80px;
+  font-size: 18px;
+  margin: 0px 10px;
+}
+/**add and edit form**/
+.theform {
+  padding: 50px 20px;
+  background-color: white;
+  margin: 30px auto;
+  border-radius: 2%;
+  border-bottom: 1px;
+  box-shadow: 0 24px 80px hsla(0, 0%, 0%, 0.25);
+  width: 70%;
 }
 
-.App-link {
-  color: #61dafb;
+.theform h3 {
+  color: #7a7afa;
+  font-size: 35px;
+  text-align: center;
+  margin: 10px 0;
+  font-family: 'Amiri', serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.theform p {
+  color: #7a7afa;
+  font-size: 15px;
+  text-align: center;
+  margin: 10px 0;
+  font-family: 'Amiri', serif;
+}
+
+.theform label {
+  display: inline-block;
+  color: #1f1f1f;
+  font-size: 18px;
+  text-align: left;
+  font-family: 'Amiri', serif;
+  margin: 0 0 10px 10px;
+
+}
+
+.theform input,
+.theform textarea,
+.theform select {
+  width: 100%;
+  margin-bottom: 30px;
+  border-radius: 60px;
+  padding: 10px 16px;
+  outline: none;
+  border: 1px solid #868686;
+  color: black;
+  background-color: white;
+  text-align: left;
+}
+
+.theform input::placeholder,
+.theform textarea::placeholder {
+  color: #868686;
+  font-size: 20px;
+  padding: 20px;
+  text-align: left;
+}
+
+.theform button {
+  display: block;
+  background: #7a7afa;
+  background: linear-gradient(to left, #7a7afa 0%, #5c61ff 100%);
+  border: 1px solid #7a7afa;
+  color: white;
+  padding: 15px 10px;
+  border-radius: 1%;
+  width: 250px;
+  font-size: 20px;
+  margin: 20px auto;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+  font-family: 'Amiri', serif;
+
+}
+
+.theform button:hover {
+  transition: all 0.5s ease-in-out;
+  background: white;
+  border: 1px solid #7a7afa;
+  color: black;
 }
